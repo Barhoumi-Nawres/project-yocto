@@ -1,5 +1,12 @@
 # project-yocto
 yocto project is an open source project it's not a linux distribution it's creats one for your .
+we need to create two partition on SD card one for boot and the other for root 
+using the flowing commands :
+```bash
+sudo fdisk /dev/sdb
+sudo mkfs.vfat /dev/sdb1
+sudo mkfs.ext4 /dev/sdb2
+```
 
 nmount the SD card:
 
