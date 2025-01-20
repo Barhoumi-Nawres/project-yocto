@@ -13,6 +13,11 @@ sudo umount /dev/sdb2
  ```bash
 sudo dd if=core-image-minimal-raspberrypi3-20250112224637.rootfs.wic of=/dev/sdb bs=4M status=progress
 ```
+or 
+```bash
+bzip2 -dc core-image-minimal-raspberrypi3-64.rootfs-20250120212228.wic.bz2 | sudo dd of=/dev/sdX bs=1M iflag=fullblock oflag=direct conv=fsync
+
+```
 
 Insert the SD card into your Raspberry Pi: Now, the SD card is ready to boot the Raspberry Pi. Insert it into your Raspberry Pi and power it on!
 
