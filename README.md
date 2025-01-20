@@ -7,6 +7,18 @@ sudo fdisk /dev/sdb
 sudo mkfs.vfat /dev/sdb1
 sudo mkfs.ext4 /dev/sdb2
 ```
+the result :
+```bash
+
+nawres@nawres:~/project/poky/build/tmp/deploy/images/raspberrypi3-64$ lsblk /dev/sdb
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sdb      8:16   1 14.8G  0 disk 
+├─sdb1   8:17   1  256M  0 part 
+└─sdb2   8:18   1 14.6G  0 part 
+nawres@nawres:~/project/poky/build/tmp/deploy/images/raspberrypi3-64$ 
+```
+
+
 
 nmount the SD card:
 
