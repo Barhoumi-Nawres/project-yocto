@@ -1,5 +1,6 @@
 # project-yocto
 yocto project is an open source project it's not a linux distribution it's creats one for your .
+-work with scarthgap release .
 we need to create two partition on SD card one for boot and the other for root 
 using the flowing commands :
 ```bash
